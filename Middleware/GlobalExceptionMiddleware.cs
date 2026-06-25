@@ -1,12 +1,11 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using Newtonsoft.Json; // İndirdiğimiz paket buraya geldi!
+using Newtonsoft.Json; 
 using System;
 using System.Threading.Tasks;
 
 namespace FIRSTAPI.Middleware
 {
-    // EKSİK OLAN BİNAYI (CLASS) BURAYA EKLEDİM
     public class GlobalExceptionMiddleware 
     {
         private readonly RequestDelegate _next;
