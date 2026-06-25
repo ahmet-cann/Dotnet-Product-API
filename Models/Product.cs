@@ -5,8 +5,10 @@ namespace FIRSTAPI.Models
         public int Id{get; set;}
         public string Name{get; set;} = string.Empty;
         public string Description{get; set;} = string.Empty;
-        public int  Price{get;set;} 
+        public decimal Price{get;set;} 
         public int stock{get;set;}
         public DateTime createdDate{get;set;} = DateTime.UtcNow;
+    
+        public bool IsActive { get; set; } = true;
     }
 }
