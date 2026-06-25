@@ -3,11 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.Design;
 using FIRSTAPI.Middleware;
 
+using FIRSTAPI.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IProductServices, ProductServices>();
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
