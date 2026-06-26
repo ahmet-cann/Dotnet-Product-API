@@ -91,9 +91,32 @@ namespace FIRSTAPI.Services
 
             return true;
         }
+
+        public Task<List<ProductResponse>> GetAllProducts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ProductResponse> GetProductById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ProductResponse> CreateProduct(CreateProductRequest productRequest)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ProductResponse> UpdateProduct(int id, UpdateProductRequest productRequest)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeleteProduct(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 
-    public interface IProductServices
-    {
-    }
+    
 }
